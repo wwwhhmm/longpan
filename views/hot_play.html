@@ -1,0 +1,19 @@
+<div data-role="page" id="page1_page" data-add-back-btn="true" data-back-btn-text="Previous"> 
+	<div data-role="header" data-theme="c"  data-position="fixed">
+		<h1>Contacts List</h1>
+	</div>
+	<div data-role="content">
+		<form action="/save.html" method="post" data-transition="pop">
+			<div data-role="fieldcontain">
+				<label for="email">邮箱:</label>
+				<input type="email" name="email" id="email" value="" placeholder="Text"/>
+			</div>
+			<button type="submit" name="submit">Submit</button>
+		</form>
+		<a data-transition="slidedown" data-role="button" id="term_id">Terms and Conditions</a>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<a id="contacts_back" data-transition="slidedown" href="../views/MainPage.html">return</a>
+	</div>
+</div>
+<!-- script src="../js/Page1.js"></script -->

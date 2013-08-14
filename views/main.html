@@ -1,0 +1,37 @@
+<div data-role="page" id="main_page"> 
+	<div data-role="header" data-position="fixed" >
+		<a href="#" data-icon="refresh">刷新</a>
+		<h3>龙&nbsp;&nbsp;&nbsp;&nbsp;盘</h3>
+		<a id='exit_btn' data-icon="delete">退出</a>
+	</div>
+	<div data-role="content">
+		<p>您的广告已被1000人观看。<br />111人点击了您的广告。</p>
+		<p>您的账户已销费xxx元。</p>
+		
+		<ul id="hot_play_list"  data-role="listview" data-inset="true">
+			<li data-role="list-divider">广&nbsp;告&nbsp;热&nbsp;播</li>
+			<li>
+				<a data-rel="dialog" ref-img="../images/sitelogo1364546574.jpg" ref-title="淘金信息网1" >
+					<img src="../images/sitelogo1364546574.jpg" />
+					<p>淘金信息网</p>
+				</a>
+			</li>
+			<li>
+				<a data-rel="dialog" ref-img="../images/sitelogo1369795482.jpg" ref-title="中国鹧鸪网1" >
+					<img src="../images/sitelogo1369795482.jpg" />
+					<p>中国鹧鸪网</p>
+				</a>
+			</li>
+		</ul>
+		
+		<div class="segmented-control" data-theme="d" >
+			<div data-role="controlgroup" data-type="horizontal">
+				<a id="show_pv" data-role="button" class="ui-control-active ui-control-inactive">广告观看人次</a>
+				<a id="show_cost" data-role="button" class="ui-control-inactive">&nbsp;&nbsp;广告费用&nbsp;&nbsp;</a>
+			</div>
+		</div>		
+		<div class="chart-container">
+			<div id="chart_holder" class="chart-placeholder"></div>
+		</div>
+	</div>
+</div>
