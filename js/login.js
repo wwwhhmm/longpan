@@ -40,6 +40,7 @@ function tryLogin() {
 		url: initOptions.webSite +"/test.php",
 		data: reqStr,
 		dataType: "json",
+		cache: false,
 		success: function( response ) {
 			$.mobile.hidePageLoadingMsg();
 			alert("response:"+response.id);

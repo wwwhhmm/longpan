@@ -1,9 +1,9 @@
 $(document).on("pageshow", "#main_page", function(e) {
 	alert("main_page pageshow");
 	
-	if ( !($('#dlg_msg').length === 1) ) {
-		$.mobile.loadPage("dlg_msg.html");
-	}
+	//if ( !($('#dlg_msg').length === 1) ) {
+	//	$.mobile.loadPage("dlg_msg.html");
+	//}
 	showPV();
 	
 	$('#show_pv').click( function(e) {
@@ -23,7 +23,8 @@ $(document).on("pageshow", "#main_page", function(e) {
 		//alert($('#dlg_msg').html());
 		$('#dlg_msg h1').html('创意预览');
 		$('#dlg_msg p').html( $(this).attr('ref-title')+'<br /><img src="'+$(this).attr('ref-img')+'" />' );
-		$.mobile.changePage( $("#dlg_msg"), { role: "dialog" } );
+		//$.mobile.changePage( $("#dlg_msg"), { role: "dialog" } );
+		$( "#dlg_msg" ).popup("open", { positionTo: "window", transition: "pop" });
 	});
 	
 	$('#exit_btn').click( function(e) {

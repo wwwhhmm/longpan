@@ -2,7 +2,7 @@
 	connectOnStartup : true,
     
 	webSite : 'http://www.adyun.com',
-	updateSite : 'http://www.adyun/mobile',
+	updateSite : 'http://192.168.93.24:8000/mobile',
 	// # The callback function to invoke in case application fails to connect to Worklight Server
 	//onConnectionFailure: function (){},
 	

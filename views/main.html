@@ -11,7 +11,7 @@
 		<ul id="hot_play_list"  data-role="listview" data-inset="true">
 			<li data-role="list-divider">广&nbsp;告&nbsp;热&nbsp;播</li>
 			<li>
-				<a data-rel="dialog" ref-img="../images/sitelogo1364546574.jpg" ref-title="淘金信息网1" >
+				<a ref-img="../images/sitelogo1364546574.jpg" ref-title="淘金信息网1" >
 					<img src="../images/sitelogo1364546574.jpg" />
 					<p>淘金信息网</p>
 				</a>
@@ -23,7 +23,15 @@
 				</a>
 			</li>
 		</ul>
-		
+<div id="dlg_msg" data-role="popup" data-overlay-theme="a" data-theme="c" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+	<div data-role="header" data-theme="a" class="ui-corner-top">
+		<h1>提示</h1>
+	</div>
+	<div data-role="content" data-theme="d" class="ui-corner-bottom ui-content" >
+		<p>内容...</p>
+		<a href="#" data-role="button" data-rel="back" >关闭</a>
+	</div>
+</div>
 		<div class="segmented-control" data-theme="d" >
 			<div data-role="controlgroup" data-type="horizontal">
 				<a id="show_pv" data-role="button" class="ui-control-active ui-control-inactive">广告观看人次</a>
